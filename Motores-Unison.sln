@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motores-Unison-App", "Motores-Unison-App\Motores-Unison-App.csproj", "{621D8359-12C6-4A5E-AD1D-5ED6D915446B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Motores-Unison-Core", "Motores-Unison-Core\Motores-Unison-Core.csproj", "{D3614639-D5D9-46DB-BB4B-B16D7B8C8716}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{621D8359-12C6-4A5E-AD1D-5ED6D915446B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621D8359-12C6-4A5E-AD1D-5ED6D915446B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621D8359-12C6-4A5E-AD1D-5ED6D915446B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621D8359-12C6-4A5E-AD1D-5ED6D915446B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3614639-D5D9-46DB-BB4B-B16D7B8C8716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3614639-D5D9-46DB-BB4B-B16D7B8C8716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3614639-D5D9-46DB-BB4B-B16D7B8C8716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3614639-D5D9-46DB-BB4B-B16D7B8C8716}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

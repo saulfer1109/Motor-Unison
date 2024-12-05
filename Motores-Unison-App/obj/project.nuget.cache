@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "p02M66eyJec=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\RiderProjects\\Motores-Unison\\Motores-Unison-App\\Motores-Unison-App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\communitytoolkit.mvvm\\8.3.2\\communitytoolkit.mvvm.8.3.2.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\wpf-ui\\3.0.5\\wpf-ui.3.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}
