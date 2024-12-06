@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZEwuy/OeVQI=",
+  "dgSpecHash": "0pz9k6Na82k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\RiderProjects\\Motores-Unison\\Motores-Unison-Core\\Motores-Unison-Core.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\Motor-Unison\\Motores-Unison-Core\\Motores-Unison-Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.0\\microsoft.data.sqlite.core.9.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
