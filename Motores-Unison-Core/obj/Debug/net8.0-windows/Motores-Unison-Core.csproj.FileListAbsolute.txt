@@ -1,0 +1,7 @@
+c:\Users\PC\Desktop\Motor-Unison\Motores-Unison-Core\obj\Debug\net8.0-windows\Motores-Unison-Core.csproj.AssemblyReference.cache
+c:\Users\PC\Desktop\Motor-Unison\Motores-Unison-Core\obj\Debug\net8.0-windows\Motores-Unison-Core_MarkupCompile.cache
+c:\Users\PC\Desktop\Motor-Unison\Motores-Unison-Core\obj\Debug\net8.0-windows\Views\InicioView.baml
+c:\Users\PC\Desktop\Motor-Unison\Motores-Unison-Core\obj\Debug\net8.0-windows\MainWindow.g.cs
+c:\Users\PC\Desktop\Motor-Unison\Motores-Unison-Core\obj\Debug\net8.0-windows\Views\InicioView.g.cs
+c:\Users\PC\Desktop\Motor-Unison\Motores-Unison-Core\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+c:\Users\PC\Desktop\Motor-Unison\Motores-Unison-Core\obj\Debug\net8.0-windows\Motores-Unison-Core_MarkupCompile.lref

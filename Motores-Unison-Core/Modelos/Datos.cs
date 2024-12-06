@@ -4,7 +4,7 @@ public class Datos
 {
     public Guid Id { get; set; }
     public string Tipo { get; set; } = string.Empty;
-    public long Tiempo { get; set; } = string.Empty;
+    public long Tiempo { get; set; }
     public int acc_x { get; set; }
     public int acc_y { get; set; }
     public int acc_z { get; set; }
