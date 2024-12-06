@@ -15,4 +15,19 @@
       <PackageReference Include="WPF-UI" Version="3.0.5" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Motores-Unison-Core\Motores-Unison-Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="resourses\" />
+      <Folder Include="Servicios\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Update="Views\InicioView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+    </ItemGroup>
+
 </Project>

@@ -1,54 +1,68 @@
-﻿<Page x:Class="Notas_Unison.Views.InicioView"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="clr-namespace:Notas_Unison.Views"
-      mc:Ignorable="d"
-      Title="InicioView" Height="600" Width="800">
-    <Grid>
-        
+<UserControl x:Class="Motores_Unison_Core.Views.InicioView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Background="White"
+             mc:Ignorable="d">
+    
+    <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
-        <Image Grid.Row="0" Height="150" 
-               Source="pack://application:,,,/Resources/Logo_Unison.png" 
-               Margin="0 80 0 20"/>
 
-        
-        <TextBlock Grid.Row="1" 
-                      Text="Motores Unison"
-                      Style="{StaticResource TitleText}"
-                      Margin="0,30,0,0"
-                      
-                      />
-        
-        <TextBlock Grid.Row="2" 
-                   Text="Aplicación de graficado de datos"
-                   Margin="0,40,0,0"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
-        
-        <TextBlock Grid.Row="3" 
-                   Text="Orlando Cervantes Sousa  "
-                   
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Bottom"/>
-        
-        <TextBlock Grid.Row="3" 
-                   Text="Saul Espinoza Rivera  "
-                   Margin="0,0,0,60"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Bottom"/>
-        
-        <TextBlock Grid.Row="3" 
-                   Text="Alejandro Sandoval  "
-                   Margin="0,0,0,30"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Bottom"/>
+        <TextBlock Grid.Row="0" 
+                   Text="Datos del Motor en Tiempo Real"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Margin="0,0,0,20"
+                   HorizontalAlignment="Center"/>
+
+        <Border Grid.Row="1" 
+                BorderBrush="#DDDDDD" 
+                BorderThickness="1" 
+                CornerRadius="5"
+                Margin="0,0,0,20"
+                Padding="10">
+            <lvc:CartesianChart Series="{Binding Series}"
+                              ZoomMode="X"
+                              TooltipPosition="Top">
+                <lvc:CartesianChart.XAxes>
+                    <lvc:Axis Name="Tiempo"
+                             LabelsRotation="-45"/>
+                </lvc:CartesianChart.XAxes>
+                <lvc:CartesianChart.YAxes>
+                    <lvc:Axis Name="Valores"/>
+                </lvc:CartesianChart.YAxes>
+            </lvc:CartesianChart>
+        </Border>
+
+        <Border Grid.Row="2" 
+                BorderBrush="#DDDDDD" 
+                BorderThickness="1" 
+                CornerRadius="5">
+            <DataGrid ItemsSource="{Binding DatosList}"
+                     AutoGenerateColumns="False"
+                     IsReadOnly="True"
+                     GridLinesVisibility="Horizontal"
+                     HeadersVisibility="Column"
+                     Background="Transparent"
+                     BorderThickness="0"
+                     MaxHeight="200">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Tipo" Binding="{Binding Tipo}" Width="Auto"/>
+                    <DataGridTextColumn Header="Tiempo" Binding="{Binding Tiempo}" Width="Auto"/>
+                    <DataGridTextColumn Header="Acc X" Binding="{Binding acc_x}" Width="Auto"/>
+                    <DataGridTextColumn Header="Acc Y" Binding="{Binding acc_y}" Width="Auto"/>
+                    <DataGridTextColumn Header="Acc Z" Binding="{Binding acc_z}" Width="Auto"/>
+                    <DataGridTextColumn Header="Gyro X" Binding="{Binding gyro_x}" Width="Auto"/>
+                    <DataGridTextColumn Header="Gyro Y" Binding="{Binding gyro_y}" Width="Auto"/>
+                    <DataGridTextColumn Header="Gyro Z" Binding="{Binding gyro_z}" Width="Auto"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
     </Grid>
-</Page>
+</UserControl>
